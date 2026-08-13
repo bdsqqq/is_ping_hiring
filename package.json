@@ -2,15 +2,23 @@
   "name": "@example/minimal",
   "version": "0.0.1",
   "private": true,
+  "type": "module",
+  "engines": {
+    "node": "24.x"
+  },
+  "packageManager": "npm@11.17.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "typecheck": "astro check",
+    "test": "node --test",
     "astro": "astro"
   },
   "devDependencies": {
-    "@astrojs/tailwind": "^1.0.0",
-    "astro": "^1.0.6"
+    "@astrojs/check": "^0.9.6",
+    "astro": "^7.2.1",
+    "typescript": "^5.9.3"
   }
 }
